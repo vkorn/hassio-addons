@@ -2,7 +2,7 @@
 
  Bridge for pairing Hass.io and Samsung SmartThings. More details [here](https://github.com/stjohnjohnson/smartthings-mqtt-bridge)
 
-Everything is configurable through UI. Params
+Everything is configurable through UI. Available params:
 
 | Param          | Description              |
 |----------------|--------------------------|
