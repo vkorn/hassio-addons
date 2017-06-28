@@ -1,0 +1,13 @@
+AppDaemon:
+  cert_verify: False
+  disable_apps: 1
+  logfile: STDOUT
+  errorfile: STDERR
+  threads: 10
+  app_dir: /config/hadaemon/apps
+HASS:
+  ha_url: http://172.17.0.1:8123
+  ha_key: password
+HADashboard:
+  dash_url: http://cp.local.io
+  dash_dir: /config/hadaemon/dashboards

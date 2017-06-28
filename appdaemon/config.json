@@ -1,0 +1,21 @@
+{
+    "name": "AppDaemon",
+    "version": "0.0.11",
+    "slug": "appdaemon",
+    "description": "Beta version of HADaemon (https://github.com/home-assistant/appdaemon/tree/hadashboard_beta)",
+    "url": "https://github.com/vkorn/hassio-addons/appdaemon",
+    "startup": "after",
+    "boot": "auto",
+    "map": ["config:rw"],
+    "options": {
+        "commtype": "SSE",
+        "domain": "cp.local.io"
+    },
+    "schema": {
+        "commtype": "str",
+        "domain": "str"
+    }, 
+    "ports": {
+        "80/tcp": 3030
+    }
+}

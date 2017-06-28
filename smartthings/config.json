@@ -1,0 +1,31 @@
+{
+    "name": "SmartThingsBridge",
+    "version": "0.0.2",
+    "slug": "smartthings",
+    "description": "Smart Things Mqtt Bridge(https://github.com/stjohnjohnson/smartthings-mqtt-bridge)",
+    "url": "https://github.com/vkorn/hassio-addons/smartthings",
+    "startup": "before",
+    "boot": "auto",
+    "host_network": true,
+    "options": {
+        "broker_host": "172.17.0.1",
+        "broker_port": 8888,
+        "preface": "smartthings",
+        "state_suffix": "state",
+        "command_suffix": "cmd",
+        "login": "login",
+        "password": "password",
+        "bridge_port": 2080
+
+    },
+    "schema": {
+        "broker_host": "str",
+        "broker_port": "int",
+        "preface": "str",
+        "state_suffix": "str",
+        "command_suffix": "str",
+        "login": "str",
+        "password": "str",
+        "bridge_port": "int"
+    }
+}
