@@ -1,0 +1,12 @@
+{
+  "name": "ps4-hassio-walker",
+  "version": "0.0.1",
+  "description": "Bridge between ps4-walker and Hass.io",
+  "main": "server.js",
+  "author": "Vlad Korniev",
+  "dependencies": {
+    "express": "^4.15.3",
+    "ps4-waker": "^1.3.3",
+   "minimist": "^1.2.0"
+  }
+}
