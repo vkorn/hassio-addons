@@ -12,7 +12,7 @@ const HTTP_404 = 404;
 
 const argv = require('minimist')(process.argv.slice(2));
 
-if(!argv.credentials){
+if (!argv.credentials) {
     console.error("Please spesify --credentials");
     process.exit(1);
 }
@@ -96,5 +96,7 @@ router.route("/:device_ip/key/:key")
 
 app.use("/ps4", router);
 const port = argv.port || 3000;
-app.listen(port);
-console.log("Listening on " + port);
+const ip = argv.host || "0.0.0.0";
+app.listen(port, ip, function () {
+    console.log("Listening on " + ip + ":" + port);
+});
