@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const express = require("express");
 const app = express();
 
@@ -10,7 +12,10 @@ const HTTP_404 = 404;
 
 const argv = require('minimist')(process.argv.slice(2));
 
-console.log(argv);
+if(!argv.credentials){
+    console.error("Please spesify --credentials");
+    process.exit(1);
+}
 
 const get_options = function (ip) {
     return {
@@ -90,4 +95,6 @@ router.route("/:device_ip/key/:key")
 
 
 app.use("/ps4", router);
-app.listen(argv.port || 3000);
+const port = argv.port || 3000;
+app.listen(port);
+console.log("Listening on " + port);
