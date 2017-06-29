@@ -1,0 +1,30 @@
+{
+    "name": "PS4WakerBridge",
+    "version": "0.0.1",
+    "slug": "ps4waker",
+    "description": "REST wrapper around PS4-Waker(https://github.com/dhleong/ps4-waker)",
+    "url": "https://github.com/vkorn/hassio-addons",
+    "startup": "after",
+    "boot": "auto",
+    "host_network": true,
+    "options": {
+        "port": 3030,
+        "devices": [
+            {
+                "client_type": "i",
+                "auth_type": "C",
+                "credentials": "your credentials"
+            }
+        ]
+    },
+    "schema": {
+       "port": "int",
+        "devices": [
+            {
+                "client_type": "str",
+                "auth_type": "str",
+                "credentials": "str"
+            }
+        ]
+    }
+}
