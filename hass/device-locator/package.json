@@ -1,0 +1,14 @@
+{
+  "name": "device-locator",
+  "version": "0.0.1",
+  "description": "Reverse calling device",
+  "main": "server.js",
+  "author": "Vlad Korniev",
+  "bin": {
+    "device-locator": "server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "minimist": "^1.2.0"
+  }
+}
