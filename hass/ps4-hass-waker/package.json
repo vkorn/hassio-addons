@@ -1,5 +1,5 @@
 {
-  "name": "ps4-hassio-walker",
+  "name": "ps4-hassio-waker",
   "version": "0.0.1",
   "description": "Bridge between ps4-walker and Hass.io",
   "main": "server.js",
