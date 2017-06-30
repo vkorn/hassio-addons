@@ -1,9 +1,10 @@
 {
     "name": "SmartThingsBridge",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "slug": "smartthings",
     "description": "Smart Things Mqtt Bridge(https://github.com/stjohnjohnson/smartthings-mqtt-bridge)",
-    "url": "https://github.com/vkorn/hassio-addons",
+    "url": "https://github.com/vkorn/hassio-addons/tree/master/smartthings",
+    "image": "vkorn/{arch}-smartthings",
     "startup": "before",
     "boot": "auto",
     "host_network": true,
