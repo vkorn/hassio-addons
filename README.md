@@ -8,18 +8,23 @@ Following addons are built:
 
 SmartThings MQQT Bridge
 
+## [PS4Waker](https://github.com/vkorn/hassio-addons/tree/master/ps4waker) [![](https://images.microbadger.com/badges/version/vkorn/armhf-ps4waker.svg)](https://microbadger.com/images/vkorn/armhf-ps4waker "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/vkorn/armhf-ps4waker.svg)](https://microbadger.com/images/vkorn/armhf-ps4waker "Get your own image badge on microbadger.com")
+
+REST-wrapper arodun ps4-waker to support ps4 component
 
 
 Other addons are not being built intentionally as they are for testing purposes only. You'll need to download and place them under `/addons` folder of your Hass.io instance. 
 
-If you're getting too much stalled images, run (warning, can damage you setup!!!)
+## [AppDaemon](https://github.com/vkorn/hassio-addons/tree/master/appdaemon)
+
+Beta-version of AppDaemon with HaDashobard v2.
+
+## Usefull commands
+
+If you're getting too much stalled containers, run (warning, can damage you setup!!!)
 
 ```
 docker rm -v $(docker ps --filter status=exited -q 2>/dev/null)
-```
-
-Or created but not running
-
-```
 docker rm -v $(docker ps --filter status=created -q 2>/dev/null)
 ```
+Similar can be done for images.

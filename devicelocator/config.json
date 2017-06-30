@@ -1,0 +1,30 @@
+{
+    "name": "DeviceLocator",
+    "version": "0.0.1",
+    "slug": "devlocator",
+    "description": "Simple IP and device name loockup",
+    "url": "https://github.com/vkorn/hassio-addons",
+    "startup": "after",
+    "boot": "auto",
+    "host_network": true,
+    "options": {
+        "port": 3030,
+        "hosts": [
+            {
+                "name": "device name",
+                "mac": null,
+                "ip": "device ip"
+            }
+        ]
+    },
+    "schema": {
+       "port": "int",
+        "hosts": [
+            {
+                "name": "str",
+                "mac": "str",
+                "ip": "str"
+            }
+        ]
+    }
+}
