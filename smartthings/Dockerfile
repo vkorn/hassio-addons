@@ -3,7 +3,7 @@ FROM %%BASE_IMAGE%%
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache jq nodejs nodejs-npm \ 
-	&& npm install -g smartthings-mqtt-bridge mustache
+	&& npm install --verbose -g smartthings-mqtt-bridge mustache
 
 COPY template.yml /templates/
 COPY run.sh /
