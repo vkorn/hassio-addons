@@ -3,7 +3,7 @@ FROM %%BASE_IMAGE%%
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache jq nodejs nodejs-npm git \ 
-	&& npm install -g mustache \
+	
 	&& mkdir repo \
 	&& cd repo \
 	&& git init . \
@@ -12,7 +12,10 @@ RUN apk add --no-cache jq nodejs nodejs-npm git \
 	&& echo "hass/ps4-hass-waker/" >> .git/info/sparse-checkout \
 	&& git pull origin master \
 	&& cd hass/ps4-hass-waker \
+	&& npm config set unsafe-perm true \
+	&& npm install -g mustache \
 	&& npm install -g . \
+	&& npm config set unsafe-perm false \
 	&& cd ../../../ \
 	&& rm -rf repo
 
