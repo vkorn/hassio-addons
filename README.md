@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vkorn/hassio-addons.svg?branch=master)](https://travis-ci.org/vkorn/hassio-addons)
 
-Following addons are built: 
+## Pre-built images
 
 ## [SmartThings](https://github.com/vkorn/hassio-addons/tree/master/smartthings) [![](https://images.microbadger.com/badges/version/vkorn/armhf-smartthings.svg)](https://microbadger.com/images/vkorn/armhf-smartthings "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/vkorn/armhf-smartthings.svg)](https://microbadger.com/images/vkorn/armhf-smartthings "Get your own image badge on microbadger.com")
 
@@ -12,8 +12,13 @@ SmartThings MQQT Bridge
 
 REST-wrapper arodun ps4-waker to support ps4 component
 
+## [DeviceLocator](https://github.com/vkorn/hassio-addons/tree/master/devicelocator) [![](https://images.microbadger.com/badges/version/vkorn/armhf-devicelocator.svg)](https://microbadger.com/images/vkorn/armhf-devicelocator "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/vkorn/armhf-devicelocator.svg)](https://microbadger.com/images/vkorn/armhf-devicelocator "Get your own image badge on microbadger.com")
 
-Other addons are not being built intentionally as they are for testing purposes only. You'll need to download and place them under `/addons` folder of your Hass.io instance. 
+Simple service which will return IP of callind device. Useful for UI tweaking only.
+
+## Just code
+
+These add-ons are not being built intentionally as they are for testing purposes only. You'll need to download and place them under `/addons` folder of your Hass.io instance. 
 
 ## [AppDaemon](https://github.com/vkorn/hassio-addons/tree/master/appdaemon)
 
