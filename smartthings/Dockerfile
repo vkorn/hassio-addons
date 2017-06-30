@@ -3,7 +3,9 @@ FROM %%BASE_IMAGE%%
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache jq nodejs nodejs-npm \ 
-	&& npm install --verbose -g smartthings-mqtt-bridge mustache
+	&& npm config set unsafe-perm true \
+	&& npm install -g smartthings-mqtt-bridge mustache \
+	&& npm config set unsafe-perm false
 
 COPY template.yml /templates/
 COPY run.sh /
