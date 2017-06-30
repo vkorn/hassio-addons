@@ -7,11 +7,14 @@ const router = express.Router();
 const argv = require('minimist')(process.argv.slice(2));
 const devices = {};
 if (argv.config) {
-    let data = JSON.parse(require('fs').readFileSync(argv.config, "UTF-8"));
-    for (let ii = 0; ii < data.length; ii++) {
-        devices[data[ii].ip] = data[ii].name;
+    data = JSON.parse(require('fs').readFileSync(argv.config, "UTF-8"));
+    if (data.hosts) {
+        data = data.hosts;
+        for (let ii = 0; ii < data.length; ii++) {
+            devices[data[ii].ip] = data[ii].name;
+        }
+        console.log("Got " + data.length + " entries from config");
     }
-    console.log("Got " + data.length + " entries from config");
 }
 
 router.route("")
