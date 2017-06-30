@@ -9,6 +9,7 @@ before_install:
   - chmod u+x create_hassio_addon.sh
 env:
   - ADDON="smartthings"
+  - ADDON="ps4waker"
 script:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh $ADDON
