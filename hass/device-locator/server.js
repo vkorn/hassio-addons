@@ -31,8 +31,11 @@ router.route("")
         });
     });
 
-app.enable('trust proxy');
+const cors = require("cors");
+app.use(cors());
+app.options("*", cors());
 app.use("/", router);
+app.enable('trust proxy');
 const port = argv.port || 3000;
 const ip = argv.host || "0.0.0.0";
 app.listen(port, ip, function () {

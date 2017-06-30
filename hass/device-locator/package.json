@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "^4.15.3",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "cors": "^2.8.3"
   }
 }
