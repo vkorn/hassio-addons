@@ -1,8 +1,8 @@
 {
     "name": "ConfigWatcher",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "slug": "configwatcher",
-    "description": "Wahtcing config folder using periodic git pulls",
+    "description": "Config watchdog which will perform restarts if required",
     "url": "https://github.com/vkorn/hassio-addons/tree/master/configwatcher",
     "image": "vkorn/{arch}-configwatcher",
     "startup": "after",

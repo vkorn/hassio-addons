@@ -16,6 +16,11 @@ REST-wrapper arodun ps4-waker to support ps4 component
 
 Simple service which will return IP of callind device. Useful for UI tweaking only.
 
+
+## [ConfigWatcher](https://github.com/vkorn/hassio-addons/tree/master/configwatcher) [![](https://images.microbadger.com/badges/version/vkorn/armhf-configwatcher.svg)](https://microbadger.com/images/vkorn/armhf-configwatcher "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/vkorn/armhf-configwatcher.svg)](https://microbadger.com/images/vkorn/armhf-configwatcher "Get your own image badge on microbadger.com")
+
+Config watchdog which will perform restarts if required. 
+
 ## Just code
 
 These add-ons are not being built intentionally as they are for testing purposes only. You'll need to download and place them under `/addons` folder of your Hass.io instance. 

@@ -119,7 +119,7 @@ const doPull = function () {
             for (ii = 0; ii < update.files.length; ii++) {
                 let folder = path.dirname(update.files[ii]);
                 for (let key in watchingTargets) {
-                    if (isChildOf(folder, key) || update.files[ii] === key) {
+                    if (folder === key || isChildOf(folder, key) || update.files[ii] === key) {
                         for (let jj = 0; jj < watchingTargets[key].length; jj++) {
                             if (addonsToUpdate.indexOf(watchingTargets[key][jj]) === -1) {
                                 addonsToUpdate.push(watchingTargets[key][jj]);
