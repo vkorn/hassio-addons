@@ -2,7 +2,7 @@ FROM %%BASE_IMAGE%%
 
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache jq nodejs nodejs-npm git \ 
+RUN apk add --no-cache jq nodejs nodejs-npm git python make g++ \ 
 	&& mkdir repo \
 	&& cd repo \
 	&& git init . \
