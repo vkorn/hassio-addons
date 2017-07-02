@@ -1,0 +1,43 @@
+{
+    "name": "ConfigWatcher",
+    "version": "0.0.1",
+    "slug": "configwatcher",
+    "description": "Wahtcing config folder using periodic git pulls",
+    "url": "https://github.com/vkorn/hassio-addons/tree/master/configwatcher",
+    "startup": "after",
+    "boot": "auto",
+    "host_network": true,
+    "map": ["config:rw"],
+    "options": {
+        "base_dir": null,
+        "check_delay": null,
+        "hassio_host": null,
+        "hass_host": null,
+        "hass_key": "PASSWORD",
+        "notify": null, 
+        "notify_entity": "my_telegram",
+        "hass_watch": ["config"],
+        "addons": [
+            {
+                "name": "AppDaemon",
+                "watch": "hadaemon/dashboards"
+            }
+        ]
+    },
+    "schema": {
+        "base_dir": "str",
+        "check_delay": "int",
+        "hassio_host": "str",
+        "hass_host": "str",
+        "hass_key": "str",
+        "notify": "bool", 
+        "notify_entity": "str",
+        "hass_watch": ["str"],
+        "addons": [
+            {
+                "name": "str",
+                "watch": "str"
+            }
+        ]
+    }
+}

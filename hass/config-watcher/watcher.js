@@ -1,6 +1,7 @@
 const git = require("simple-git");
 let Client = require("node-rest-client").Client;
-const path = require('path');
+const path = require("path");
+const sleep = require("system-sleep");
 
 const argv = require("minimist")(process.argv.slice(2));
 const HASS = "_hass_";
@@ -155,10 +156,10 @@ const doPull = function () {
             console.log("No changes");
         }
     });
-
-
-    setInterval(doPull, (checkDelay) * 60 * 1000);
 };
 
 getAddons();
-doPull();
+while (true) {
+    sleep((checkDelay) * 60 * 1000);
+    doPull();
+}
