@@ -4,6 +4,7 @@
     "slug": "configwatcher",
     "description": "Wahtcing config folder using periodic git pulls",
     "url": "https://github.com/vkorn/hassio-addons/tree/master/configwatcher",
+    "image": "vkorn/{arch}-configwatcher",
     "startup": "after",
     "boot": "auto",
     "host_network": true,
