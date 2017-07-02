@@ -17,7 +17,8 @@ RUN apk add --no-cache jq nodejs nodejs-npm git python make g++ \
 	&& npm install -g forever \
 	&& cd /config-watcher \ 
 	&& npm install . \
-	&& npm config set unsafe-perm false 
+	&& npm config set unsafe-perm false \ 
+	&& apk del python make g++
 	
 COPY run.sh /
 RUN chmod a+x /run.sh
