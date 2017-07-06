@@ -4,7 +4,6 @@ set -e
 CONFIG_PATH=/data/options.json
 CONFIG_DIR=/config/hadaemon
 
-COMM_TYPE=$(jq --raw-output ".commtype" $CONFIG_PATH)
 DOMAIN=$(jq --raw-output ".domain" $CONFIG_PATH)
 
 if [ ! -d ${CONFIG_DIR} ]; then
@@ -13,4 +12,4 @@ if [ ! -d ${CONFIG_DIR} ]; then
 fi
 
 echo 0.0.0.0 ${DOMAIN} >> /etc/hosts
-appdaemon -c "$CONFIG_DIR" --commtype "$COMM_TYPE"
+appdaemon -c "$CONFIG_DIR"
