@@ -5,6 +5,7 @@
     "description": "Beta version of HADaemon (https://github.com/home-assistant/appdaemon/tree/hadashboard_beta)",
     "url": "https://github.com/vkorn/hassio-addons",
     "startup": "after",
+    "image": "vkorn/{arch}-appdaemon",
     "boot": "auto",
     "map": ["config:rw"],
     "options": {
