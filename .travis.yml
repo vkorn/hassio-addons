@@ -12,6 +12,7 @@ env:
   - ADDON="ps4waker"
   - ADDON="devicelocator"
   - ADDON="configwatcher"
+  - ADDON="appdaemon"
 script:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh $ADDON

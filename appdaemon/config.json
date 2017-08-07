@@ -1,6 +1,6 @@
 {
     "name": "AppDaemon",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "slug": "appdaemon",
     "description": "Beta version of HADaemon (https://github.com/home-assistant/appdaemon/tree/hadashboard_beta)",
     "url": "https://github.com/vkorn/hassio-addons",

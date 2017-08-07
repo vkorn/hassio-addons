@@ -7,7 +7,7 @@ RUN apk add --no-cache jq git python3 \
 	&& rm -r /usr/lib/python*/ensurepip \
 	&& pip3 install --upgrade pip setuptools \ 
 	&& if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi \ 
-	&& pip install git+https://github.com/home-assistant/appdaemon.git@dev
+	&& pip install git+https://github.com/home-assistant/appdaemon.git@master
 
 COPY appdaemon-example.yaml /etc/
 COPY run.sh /
