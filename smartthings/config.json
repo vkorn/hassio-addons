@@ -10,7 +10,7 @@
     "host_network": true,
     "ports": {
         "8080/tcp": 8080
-    }
+    },
     "options": {
         "broker_host": "172.17.0.1",
         "broker_port": 8888,
