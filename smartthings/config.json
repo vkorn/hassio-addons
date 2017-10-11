@@ -7,7 +7,6 @@
     "image": "vkorn/{arch}-smartthings",
     "startup": "before",
     "boot": "auto",
-    "host_network": true,
     "ports": {
         "8080/tcp": 8080
     },
