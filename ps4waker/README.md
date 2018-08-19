@@ -11,3 +11,5 @@ ps4_ip -- IP of device
 ```
 
 Credentials for ps4-waker should be configured through Hassio UI.
+
+> Please refer to [this](https://community.home-assistant.io/t/playstation-4-ps4-custom-component/16974/73) post for details of how to install and use this addon 
