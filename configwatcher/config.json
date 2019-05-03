@@ -4,6 +4,7 @@
     "slug": "configwatcher",
     "description": "Config watchdog which will perform restarts if required",
     "url": "https://github.com/vkorn/hassio-addons/tree/master/configwatcher",
+    "arch": ["armhf", "aarch64", "amd64", "i386"],
     "image": "vkorn/{arch}-configwatcher",
     "startup": "after",
     "boot": "auto",
