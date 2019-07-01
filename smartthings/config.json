@@ -8,16 +8,18 @@
     "image": "vkorn/{arch}-smartthings",
     "startup": "before",
     "boot": "auto",
-    "host_network": true,
+    "ports": {
+        "8080/tcp": 8080
+    },
     "options": {
         "broker_host": "172.17.0.1",
-        "broker_port": 8888,
+        "broker_port": 1883,
         "preface": "smartthings",
         "state_suffix": "state",
         "command_suffix": "cmd",
         "login": "login",
         "password": "password",
-        "bridge_port": 2080
+        "bridge_port": 8080
 
     },
     "schema": {
