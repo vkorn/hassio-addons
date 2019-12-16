@@ -27,7 +27,7 @@ These add-ons are not being built intentionally as they are for testing purposes
 
 ## [AppDaemon](https://github.com/vkorn/hassio-addons/tree/master/appdaemon)
 
-Beta-version of AppDaemon with HaDashobard v2.
+Beta-version of AppDaemon with HaDashboard v2.
 
 ## Usefull commands
 
