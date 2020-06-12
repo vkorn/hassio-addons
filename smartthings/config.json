@@ -17,8 +17,8 @@
         "command_suffix": "cmd",
         "login": "login",
         "password": "password",
-        "bridge_port": 2080
-
+        "bridge_port": 2080,
+        "retain": false
     },
     "schema": {
         "broker_host": "str",
@@ -28,6 +28,7 @@
         "command_suffix": "str",
         "login": "str",
         "password": "str",
-        "bridge_port": "int"
+        "bridge_port": "int",
+        "retain": "bool"
     }
 }
