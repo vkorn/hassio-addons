@@ -13,4 +13,5 @@ Everything is configurable through UI. Available params:
 | preface        | Preface for topics       |
 | state_suffix   | State topics suffix      |
 | command_suffix | Command topics suffix    |
+| retain         | MQTT Retain flag option  |
 | bridge_port    | Port bridge listening on |

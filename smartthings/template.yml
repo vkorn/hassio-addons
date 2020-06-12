@@ -5,4 +5,5 @@ mqtt:
   command_suffix: {{command_suffix}}
   username: {{login}}
   password: {{password}}
+  retain: {{retain}}
 port: {{bridge_port}}
